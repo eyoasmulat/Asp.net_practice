@@ -93,6 +93,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "vidoGameapi.Controllers.VideoGameController",
+    "Method": "DeleteVideoGame",
+    "RelativePath": "api/VideoGame/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "vidoGameapi.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

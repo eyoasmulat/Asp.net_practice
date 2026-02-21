@@ -46,8 +46,8 @@ namespace vidoGameapi.Controllers
         public ActionResult<List<VideoGame>> GetVideoGameById(int id)
         {
             var game = videoGames.FirstOrDefault(g => g.Id == id);
-                if (game is null)
-                    return NotFound();
+            if (game is null)
+                return NotFound();
             return Ok(game);
         }
         [HttpPost]
@@ -63,7 +63,7 @@ namespace vidoGameapi.Controllers
         }
         [HttpPut("{id}")]
 
-        public IActionResult UpdateVideoGame(int id ,VideoGame updatesGame)
+        public IActionResult UpdateVideoGame(int id, VideoGame updatesGame)
         {
             var game = videoGames.FirstOrDefault(g => g.Id == id);
             if (game is null)
@@ -75,5 +75,15 @@ namespace vidoGameapi.Controllers
 
             return NoContent();
         }
+    
+    [HttpDelete("{id}")]
+        public IActionResult DeleteVideoGame(int id)
+        {
+            var game = videoGames.FirstOrDefault(g => g.Id == id);
+            if (game is null)
+                return NotFound();
+            videoGames.Remove(game);
+            return NoContent();
+        }
     }
-} 
+}
