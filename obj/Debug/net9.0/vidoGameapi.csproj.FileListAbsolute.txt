@@ -32,3 +32,4 @@ C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\refint\vidoGameapi
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\vidoGameapi.pdb
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\vidoGameapi.genruntimeconfig.cache
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\ref\vidoGameapi.dll
+C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\vidoGameapi.sourcelink.json

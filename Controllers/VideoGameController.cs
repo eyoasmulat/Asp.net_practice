@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net;
 using vidoGameapi.Models;
 
 namespace vidoGameapi.Controllers
@@ -59,6 +60,20 @@ namespace vidoGameapi.Controllers
             videoGames.Add(newGame);
             //return CreatedAtAction(nameof(GetVideoGameById), new { id = newGame.Id }, newGame);
             return Ok();
+        }
+        [HttpPut("{id}")]
+
+        public IActionResult UpdateVideoGame(int id ,VideoGame updatesGame)
+        {
+            var game = videoGames.FirstOrDefault(g => g.Id == id);
+            if (game is null)
+                return NotFound();
+            game.Title = updatesGame.Title;
+            game.Platform = updatesGame.Platform;
+            game.Developer = updatesGame.Developer;
+            game.Publisher = updatesGame.Publisher;
+
+            return NoContent();
         }
     }
 } 
