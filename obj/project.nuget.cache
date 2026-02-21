@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "R/XrbDehie0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Z\\Documents\\vidoGameapi\\vidoGameapi\\vidoGameapi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\Z\\.nuget\\packages\\scalar.aspnetcore\\2.12.41\\scalar.aspnetcore.2.12.41.nupkg.sha512"
+  ],
+  "logs": []
+}
