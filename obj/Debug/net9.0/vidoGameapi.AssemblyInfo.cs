@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vidoGameapi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd81d21ce3050fcdd1a50b652d9c552537924d70")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ed6920289de656647d5fe35cbdb3c2039b051d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("vidoGameapi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vidoGameapi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
