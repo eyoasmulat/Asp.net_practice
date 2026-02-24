@@ -4808,6 +4808,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
+      "Microsoft.SqlServer.Server >= 1.0.0",
       "Scalar.AspNetCore >= 2.12.41"
     ]
   },
@@ -4884,6 +4885,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.0, )"
+          },
+          "Microsoft.SqlServer.Server": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Scalar.AspNetCore": {
             "target": "Package",
