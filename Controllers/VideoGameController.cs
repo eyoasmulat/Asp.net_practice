@@ -30,36 +30,36 @@ namespace vidoGameapi.Controllers
             if (newGame is null)
                 return BadRequest();
 
+            //newGame.Id = videoGames.Max(g => g.Id) + 1;
             _context.VideoGames.Add(newGame);
             await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetVideoGameById),
-                                   new { id = newGame.Id },
-                                   newGame);
+            return CreatedAtAction(nameof(GetVideoGameById), new { id = newGame.Id }, newGame);
+            //return Ok();
         }
-        //    [HttpPut("{id}")]
+        [HttpPut("{id}")]
 
-        //    public IActionResult UpdateVideoGame(int id, VideoGame updatesGame)
-        //    {
-        //        var game = videoGames.FirstOrDefault(g => g.Id == id);
-        //        if (game is null)
-        //            return NotFound();
-        //        game.Title = updatesGame.Title;
-        //        game.Platform = updatesGame.Platform;
-        //        game.Developer = updatesGame.Developer;
-        //        game.Publisher = updatesGame.Publisher;
+        public async  Task<IActionResult> UpdateVideoGame(int id, VideoGame updatesGame)
+        {
+            var game = await _context.VideoGames.FindAsync(id);
+            if (game is null)
+                return NotFound();
+            game.Title = updatesGame.Title;
+            game.Platform = updatesGame.Platform;
+            game.Developer = updatesGame.Developer;
+            game.Publisher = updatesGame.Publisher;
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
 
-        //        return NoContent();
-        //    }
-
-        //[HttpDelete("{id}")]
-        //    public IActionResult DeleteVideoGame(int id)
-        //    {
-        //        var game = videoGames.FirstOrDefault(g => g.Id == id);
-        //        if (game is null)
-        //            return NotFound();
-        //        videoGames.Remove(game);
-        //        return NoContent();
-        //    }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteVideoGame(int id)
+        {
+            var game = await _context.VideoGames.FindAsync(id);
+            if (game is null)
+                return NotFound();
+            _context.VideoGames.Remove(game);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
     }
 }
