@@ -25,7 +25,6 @@ C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\staticwebassets.bu
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\vidoGame.64D8D6E8.Up2Date
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\vidoGameapi.dll
 C:\Users\Z\Documents\vidoGameapi\vidoGameapi\obj\Debug\net9.0\refint\vidoGameapi.dll
